@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Casas_Red_Movil.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>CasasRedMovil.iOS</AssemblyName>
+    <AssemblyName>Casas Red Movil.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
