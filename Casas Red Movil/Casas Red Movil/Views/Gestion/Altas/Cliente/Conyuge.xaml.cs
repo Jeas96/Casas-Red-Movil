@@ -14,6 +14,7 @@ namespace Casas_Red_Movil.Views.Gestion.Altas.Cliente
 	{
 		public Conyuge ()
 		{
+            BindingContext = new ConyugeVM();
 			InitializeComponent ();
 		}
 	}
