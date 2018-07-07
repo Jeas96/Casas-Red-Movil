@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Casas_Red_Movil.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace Casas_Red_Movil.Views.Habilitacion
 	{
 		public MainHabilitacion ()
 		{
+            BindingContext = new MainHabilitacionVM();
 			InitializeComponent ();
 		}
 	}

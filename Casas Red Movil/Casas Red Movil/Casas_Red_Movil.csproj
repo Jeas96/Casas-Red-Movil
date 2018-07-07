@@ -32,6 +32,9 @@
     <EmbeddedResource Update="Views\Corretaje\Altas\DatosVivienda.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Corretaje\Altas\MainAlta.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Corretaje\Altas\Servicios.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -53,7 +56,7 @@
     <EmbeddedResource Update="Views\Gestion\Altas\Cliente\Referencia.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Gestion\Check\MainCheck.xaml">
+    <EmbeddedResource Update="Views\Gestion\Check\Check.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Gestion\MainGestion.xaml">

@@ -16,7 +16,7 @@
             <Entry x:Name="numLuz" Placeholder="Numero Servicio Luz"/>
             <Label Text="Numero Cuenta AGUA"/>
             <Entry x:Name="numAgua" Placeholder="Numero Cuenta Agua"/>
-            <Button Text="Crear" />
+            <Button Text="Crear" Clicked="OnSave" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Casas_Red_Movil.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,5 +18,9 @@ namespace Casas_Red_Movil.Views.Corretaje.Altas
             BindingContext = new DatosViviendaVM();
 			InitializeComponent ();
 		}
-	}
+        private async void OnSave()
+        {
+            await DisplayAlert("Atencion", "Datos Guardados Correctamente", "Ok");
+        }
+    }
 }

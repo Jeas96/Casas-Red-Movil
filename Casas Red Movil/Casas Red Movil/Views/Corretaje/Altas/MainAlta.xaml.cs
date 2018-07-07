@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Casas_Red_Movil.Views.Gestion.Check
+namespace Casas_Red_Movil.Views.Corretaje.Altas
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MainCheck : ContentPage
+	public partial class MainAlta : ContentPage
 	{
-		public MainCheck ()
+		public MainAlta ()
 		{
 			InitializeComponent ();
 		}

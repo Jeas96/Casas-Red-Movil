@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Casas_Red_Movil.Views.Gestion.Check.MainCheck">
+             x:Class="Casas_Red_Movil.Views.Gestion.Check.Check">
     <ContentPage.Content>
         <StackLayout>
             <Picker/>
-            <ListView ItemsSource="{Binding Adeudos}">
+            <ListView ItemsSource="{Binding Check}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -16,14 +16,16 @@
                                         <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
                                     <Label Grid.Row="0" Text="{Binding Concepto}" />
-                                    <Switch Grid.Row="1" />
+                                    <Switch Grid.Row="1" IsToggled="{Binding RespuestaB}" />
                                 </Grid>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="Crear" />
+            <Label Text="Gastos"/>
+            <Entry Placeholder="Gastos" Keyboard="Numeric" x:Name="Gastos" />
+            <Button Text="Guardar" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

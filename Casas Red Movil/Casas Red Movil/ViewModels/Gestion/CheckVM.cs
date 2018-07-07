@@ -1,106 +1,120 @@
 ﻿using Casas_Red_Movil.Models;
+using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace Casas_Red_Movil.ViewModels
+namespace Casas_Red_Movil.ViewModels.Gestion
 {
-    class HabilitacionVM
+    class CheckVM
     {
-        public List<Preguntas> Habilitacion
+        public List<Preguntas> Check
         {
             get
             {
                 return new List<Preguntas>() {
                     new Preguntas()
                     {
-                        Concepto = "Puertas",
+                        Concepto = "Escrituras",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Chapas",
+                        Concepto = "Planta Cartografica",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Marcos de Puertas",
+                        Concepto = "Predial",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Bisagras",
+                        Concepto = "Recibo de Luz",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Tazas",
+                        Concepto = "Recibo de Agua",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Lavamanos",
+                        Concepto = "Acta de Nacimiento",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Bastago",
+                        Concepto = "Copia del IFE",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Chapeton",
+                        Concepto = "Solicitud de Retencion de Info",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Maneral",
+                        Concepto = "Certificado de Hipoteca",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Regadera Completa",
+                        Concepto = "Certificado Fiscal",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Kit Lavamanos",
+                        Concepto = "Sol Estado",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Kit Taza",
+                        Concepto = "Junta Urbi",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Rosetas",
+                        Concepto = "Agua Pago",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Apagador Sencillo",
+                        Concepto = "Certificado Cartografico",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Conector Sencillo",
+                        Concepto = "No Oficial",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Apagador Doble",
+                        Concepto = "Avaluo",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Conector/Apagador",
+                        Concepto = "CT Banco",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Domo",
+                        Concepto = "Aviso Suspension",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Ventanas",
+                        Concepto = "Formato INVONAVIT",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Breack Interior",
+                        Concepto = "Fotos de la Propiedad",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Break Medidor",
+                        Concepto = "Evaluo Contacto",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Pinturas",
+                        Concepto = "Planeacion Finanza",
                     },
                     new Preguntas()
                     {
-                        Concepto = "Calibre del Cableado",
+                        Concepto = "Urbanizacion",
+                    },
+                    new Preguntas()
+                    {
+                        Concepto = "Credito INFONAVIT",
+                    },
+                    new Preguntas()
+                    {
+                        Concepto = "Notaria",
+                    },
+                    new Preguntas()
+                    {
+                        Concepto = "Firma Escrituras",
                     },
                 };
             }

@@ -22,7 +22,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="Crear" />
+            <Button Text="Crear" Clicked="OnSave"  />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

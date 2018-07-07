@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Casas_Red_Movil.ViewModels.Gestion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

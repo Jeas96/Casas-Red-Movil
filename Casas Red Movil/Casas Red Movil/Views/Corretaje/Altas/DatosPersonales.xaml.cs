@@ -13,5 +13,9 @@ namespace Casas_Red_Movil.Views.Corretaje.Altas
             BindingContext = new DatosPersonalesVM();
 			InitializeComponent ();
 		}
-	}
+        private async void OnSave()
+        {
+            await DisplayAlert("Atencion", "Datos Guardados Correctamente", "Ok");
+        }
+    }
 }

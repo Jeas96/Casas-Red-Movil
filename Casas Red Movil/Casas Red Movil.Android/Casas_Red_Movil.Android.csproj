@@ -86,8 +86,8 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Casas_Red_Movil\Casas_Red_Movil.csproj">
-      <Project>{2164E7B1-9595-483A-8D7B-1513E900262D}</Project>
+    <ProjectReference Include="..\Casas Red Movil\Casas_Red_Movil.csproj">
+      <Project>{2a3e94aa-c3db-4785-bc6e-e509978e8a38}</Project>
       <Name>Casas_Red_Movil</Name>
     </ProjectReference>
   </ItemGroup>
