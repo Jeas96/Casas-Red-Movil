@@ -14,6 +14,7 @@ namespace Casas_Red_Movil.Views.Corretaje.Altas
 	{
 		public DatosVivienda ()
 		{
+            BindingContext = new DatosViviendaVM();
 			InitializeComponent ();
 		}
 	}
