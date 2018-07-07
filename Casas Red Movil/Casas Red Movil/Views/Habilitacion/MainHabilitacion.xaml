@@ -4,9 +4,31 @@
              x:Class="Casas_Red_Movil.Views.Habilitacion.MainHabilitacion">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <Label Text="{Binding nombreUsuario}" />
+                <ListView ItemsSource="{Binding ListaCasas}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*"/>
+                                            <ColumnDefinition Width="2*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="2*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Text="{Binding Domicilio}" />
+                                        <Label Grid.Column="1" Text="{Binding Titular}" />
+                                        <Label Grid.Column="2" Text="{Binding Estado}" />
+                                        <Label Grid.Column="3" Text="{Binding Cliente}" />
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

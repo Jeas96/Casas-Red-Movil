@@ -1,13 +1,16 @@
-﻿using Casas_Red_Movil.Views;
+﻿using Casas_Red_Movil.Models;
+using Casas_Red_Movil.Views;
 using Xamarin.Forms;
 
 namespace Casas_Red_Movil
 {
     public partial class App : Application
     {
+        public static Administrativo usuarioActivo;
+
         public App()
         {
-            MainPage = new Login();
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

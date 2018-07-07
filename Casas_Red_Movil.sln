@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casas Red Movil.Android", "Casas Red Movil\Casas Red Movil.Android\Casas Red Movil.Android.csproj", "{FF7E2F6B-87DE-442F-9023-A19A11C86299}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casas_Red_Movil.Android", "Casas Red Movil\Casas Red Movil.Android\Casas_Red_Movil.Android.csproj", "{FF7E2F6B-87DE-442F-9023-A19A11C86299}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casas Red Movil.iOS", "Casas Red Movil\Casas Red Movil.iOS\Casas Red Movil.iOS.csproj", "{A27431F4-5B66-4708-A153-DC54D166CA85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casas Red Movil", "Casas Red Movil\Casas Red Movil\Casas Red Movil.csproj", "{2A3E94AA-C3DB-4785-BC6E-E509978E8A38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casas_Red_Movil", "Casas Red Movil\Casas Red Movil\Casas_Red_Movil.csproj", "{2A3E94AA-C3DB-4785-BC6E-E509978E8A38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

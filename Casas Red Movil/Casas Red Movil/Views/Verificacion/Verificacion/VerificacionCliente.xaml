@@ -4,9 +4,42 @@
              x:Class="Casas_Red_Movil.Views.Verificacion.Verificacion.VerificacionCliente">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Switch Grid.Row="0" Grid.Column="0" x:Name="ubicacion" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="¿Conoce la ubicación físicamente del inmueble?" />
+
+                    <Switch Grid.Row="1" x:Name="vistodentro" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="¿La ha visto por dentro personalmente?" />
+
+                    <Switch Grid.Row="2" Grid.Column="0" x:Name="tiempoestimado" />
+                    <Label Grid.Row="2" Grid.Column="1" Text="¿Le dijo el tiempo estimado de entrega y firma?" />
+
+                    <Label Grid.Row="3" Grid.Column="1" Text="Si la respuesta es no, se le debe explicar al cliente que el mínimo de espera es un mes, pero depende de cada caso en particular" />
+
+                    <Label Grid.Row="4" Grid.Column="1" Text="¿Qué tiempo le dijo el vendedor?"/>
+                    <Entry Grid.Row="5" Grid.Column="1" x:Name="tiempo" Placeholder="Tiempo" />
+
+                    <Label Grid.Row="6" Grid.Column="1" Text="¿Le comentó el asesor que el proceso de trámite tiene un costo" />
+                    <Switch Grid.Row="6" Grid.Column="0" x:Name="costotramite" />
+
+                    <Label Grid.Row="7" Grid.Column="1" Text="¿Cuál es el precio que le comentó el asesor?" />
+                    <Entry Grid.Row="8" Grid.Column="1" x:Name="precioasesor" Placeholder="$0.00" Keyboard="Numeric" />
+
+                    <Label Grid.Row="9" Grid.Column="1" Text="¿Como considera que fue el trato del asesor?" />
+                    <Entry Grid.Row="10" Grid.Column="1" x:Name="trato" />
+
+                    <Label Grid.Row="11" Grid.Column="1" Text="¿Tiene alguna observacion o crítica constructiva sobre la empresa y/o el vendedor?" />
+                    <Entry Grid.Row="12" Grid.Column="1" x:Name="observacion" />
+
+                </Grid>
+            </ScrollView>
+            <Button Text="Guardar" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

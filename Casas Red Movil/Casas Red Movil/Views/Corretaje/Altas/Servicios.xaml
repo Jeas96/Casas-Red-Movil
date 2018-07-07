@@ -4,9 +4,19 @@
              x:Class="Casas_Red_Movil.Views.Corretaje.Altas.Servicios">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Contrato Recibo Predial Digital"/>
+            <Image x:Name="predial"/>
+            <Label Text="Contrato Recibo Luz Digital"/>
+            <Image x:Name="luz"/>
+            <Label Text="Contrato Recibo Agua Digital"/>
+            <Image x:Name="agua"/>
+            <Label Text="Contrato Acuerdo"/>
+            <Image x:Name="acuerdo"/>
+            <Label Text="Numero Servicio Luz"/>
+            <Entry x:Name="numLuz" Placeholder="Numero Servicio Luz"/>
+            <Label Text="Numero Cuenta AGUA"/>
+            <Entry x:Name="numAgua" Placeholder="Numero Cuenta Agua"/>
+            <Button Text="Crear" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

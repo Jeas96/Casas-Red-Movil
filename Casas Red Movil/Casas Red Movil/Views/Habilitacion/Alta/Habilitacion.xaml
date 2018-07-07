@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Casas_Red_Movil.Views.Gestion.Altas.Cliente.Direccion">
+             x:Class="Casas_Red_Movil.Views.Habilitacion.Alta.Habilitacion">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding Direccion}">
+            <ListView ItemsSource="{Binding Habilitacion}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -15,14 +15,16 @@
                                         <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
                                     <Label Grid.Row="0" Text="{Binding Concepto}" />
-                                    <Entry Grid.Row="1" Text="{Binding Respuesta}" Keyboard="{Binding Keyboard}" />
+                                    <Switch Grid.Row="1" Text="{Binding Respuesta}" />
                                 </Grid>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="Crear" />
+            <Label Text="Calibre del cableado" />
+            <Entry Placeholder="Calibre"/>
+            <Button Text="Guardar"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
