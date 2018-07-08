@@ -8,7 +8,7 @@
             <StackLayout>
                 <Button Text="Agregar Cliente" Clicked="AgregarCliente" />
                 <Label Text="{Binding nombreUsuario}" />
-                <ListView ItemsSource="{Binding ListaClientes}" SelectedItem="SelectedItem">
+                <ListView ItemsSource="{Binding ListaClientes}" ItemSelected="SelectedItem">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

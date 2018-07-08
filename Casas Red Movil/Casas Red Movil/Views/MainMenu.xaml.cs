@@ -21,7 +21,7 @@ namespace Casas_Red_Movil.Views
         private async void SelectedItem(object sender, SelectedItemChangedEventArgs e)
         {
             string opcion = e.SelectedItem.ToString();
-            lista.SelectedItem = null;
+            
             switch (opcion)
             {
                 case "Corretaje":
@@ -40,6 +40,7 @@ namespace Casas_Red_Movil.Views
                     await Navigation.PushAsync(new MainContaduria());
                     break;
             }
+            
         }
 	}
 }
