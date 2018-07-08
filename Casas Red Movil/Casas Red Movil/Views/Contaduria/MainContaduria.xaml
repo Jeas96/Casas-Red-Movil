@@ -4,9 +4,29 @@
              x:Class="Casas_Red_Movil.Views.Contaduria.MainContaduria">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <Label Text="{Binding nombreUsuario}" />
+                <ListView ItemsSource="{Binding ListaPorcentajes}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="3*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Text="{Binding Area_}" />
+                                        <Label Grid.Column="1" Text="{Binding Porcentaje}" />
+                                        <Entry Text="{Binding Gastos}" />
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="Guardar" />
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

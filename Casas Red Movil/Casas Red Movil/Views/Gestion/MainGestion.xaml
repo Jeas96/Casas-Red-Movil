@@ -5,8 +5,9 @@
     <ContentPage.Content>
         <StackLayout>
             <ScrollView>
+                <Button Text="Agregar Cliente" Clicked="AgregarCliente" />
                 <Label Text="{Binding nombreUsuario}" />
-                <ListView ItemsSource="{Binding ListaClientes}">
+                <ListView ItemsSource="{Binding ListaCasas}" SelectedItem="SelectedItem">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

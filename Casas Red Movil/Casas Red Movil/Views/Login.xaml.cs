@@ -16,7 +16,7 @@ namespace Casas_Red_Movil.Views
         {
             if (LogUser(user.Text, pass.Text))
             {
-                await Navigation.PushAsync(new MainCorretaje());
+                await Navigation.PushAsync(new MainMenu());
             }
         }
 

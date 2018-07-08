@@ -6,7 +6,7 @@
         <StackLayout>
             <ScrollView>
                 <Label Text="{Binding nombreUsuario}" />
-                <ListView ItemsSource="{Binding ListaCasas}">
+                <ListView ItemsSource="{Binding ListaCasas}" ItemSelected="SelectedItem">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -28,6 +28,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>

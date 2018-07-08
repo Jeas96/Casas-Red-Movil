@@ -53,6 +53,9 @@
     <EmbeddedResource Update="Views\Gestion\Altas\Cliente\Direccion.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Gestion\Altas\Cliente\MainAltaCliente.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Gestion\Altas\Cliente\Referencia.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

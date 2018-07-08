@@ -6,7 +6,7 @@
         <StackLayout>
             <ScrollView>
                 <Label Text="{Binding nombreUsuario}" />
-                <ListView ItemsSource="{Binding ListaClientes}">
+                <ListView ItemsSource="{Binding ListaClientes}" ItemSelected="SelectedItem">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

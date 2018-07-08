@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using CarouselView.FormsPlugin.Android;
 
 namespace Casas_Red_Movil.Droid
 {
@@ -19,6 +20,7 @@ namespace Casas_Red_Movil.Droid
 
             base.OnCreate(bundle);
 
+            CarouselViewRenderer.Init();
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }

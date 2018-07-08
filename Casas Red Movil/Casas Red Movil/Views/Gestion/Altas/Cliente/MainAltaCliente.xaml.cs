@@ -1,5 +1,4 @@
-﻿using Casas_Red_Movil.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +7,13 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Casas_Red_Movil.Views.Contaduria
+namespace Casas_Red_Movil.Views.Gestion.Altas.Cliente
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MainContaduria : ContentPage
+	public partial class MainAltaCliente : ContentPage
 	{
-		public MainContaduria ()
+		public MainAltaCliente ()
 		{
-            BindingContext = new MainContaduriaVM();
 			InitializeComponent ();
 		}
 	}

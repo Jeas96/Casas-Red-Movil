@@ -24,7 +24,7 @@
             </ListView>
             <Label Text="Calibre del cableado" />
             <Entry Placeholder="Calibre"/>
-            <Button Text="Guardar"/>
+            <Button Text="Guardar" Clicked="OnSave"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

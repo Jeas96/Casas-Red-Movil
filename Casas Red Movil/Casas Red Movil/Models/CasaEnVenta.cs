@@ -6,5 +6,6 @@
         public string Titular { get; set; }
         public string Estado { get; set; }
         public string Cliente { get; set; }
+        public float Porcentaje { get; set; }
     }
 }

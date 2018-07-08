@@ -13,5 +13,10 @@ namespace Casas_Red_Movil.Views.Habilitacion.Alta
             BindingContext = new HabilitacionVM();
 			InitializeComponent ();
 		}
-	}
+
+        private async void OnSave()
+        {
+            await DisplayAlert("Atencion", "Datos Guardados Correctamente", "Ok");
+        }
+    }
 }
