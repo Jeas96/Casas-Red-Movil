@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Casas_Red_Movil.Views.Contaduria.MainContaduria">
     <ContentPage.Content>
-        <StackLayout>
+        
             <ScrollView>
+            <StackLayout>
                 <Label Text="{Binding nombreUsuario}" />
                 <ListView ItemsSource="{Binding ListaPorcentajes}">
                     <ListView.ItemTemplate>
@@ -16,17 +17,26 @@
                                             <ColumnDefinition Width="3*"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
-                                        <Label Grid.Column="0" Text="{Binding Area_}" />
-                                        <Label Grid.Column="1" Text="{Binding Porcentaje}" />
-                                        <Entry Text="{Binding Gastos}" />
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+
+                                        </Grid.RowDefinitions>
+                                        <Label VerticalOptions="Center" Grid.Column="0" Grid.Row="1" Text="{Binding Casa}" />
+                                        <Label VerticalOptions="Center" Grid.Column="0" Grid.Row="1" Text="{Binding Area_}" />
+                                        <Label VerticalOptions="Center" Grid.Column="1" Grid.Row="1" Text="{Binding Porcentaje}" />
+                                        <Entry VerticalOptions="Center" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Placeholder="{Binding Gastos}" />
                                     </Grid>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <Button Text="Guardar" />
-            </ScrollView>
-        </StackLayout>
+                <Button Text="Guardar" Clicked="Save" />
+            </StackLayout>
+        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>

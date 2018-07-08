@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <ScrollView>
-                <ListView ItemSelected="SelectedItem" ItemsSource="{Binding ListaOpciones}" />
+                <ListView x:Name="lista" ItemSelected="SelectedItem" ItemsSource="{Binding ListaOpciones}" />
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>

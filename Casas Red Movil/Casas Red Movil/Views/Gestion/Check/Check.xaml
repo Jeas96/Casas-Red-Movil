@@ -4,7 +4,7 @@
              x:Class="Casas_Red_Movil.Views.Gestion.Check.Check">
     <ContentPage.Content>
         <StackLayout>
-            <Picker/>
+            <Picker ItemsSource="{Binding ListaCasas}" ItemDisplayBinding="{Binding Domicilio}" />
             <ListView ItemsSource="{Binding Check}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -25,7 +25,7 @@
             </ListView>
             <Label Text="Gastos"/>
             <Entry Placeholder="Gastos" Keyboard="Numeric" x:Name="Gastos" />
-            <Button Text="Guardar" />
+            <Button Text="Guardar" Clicked="Save"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

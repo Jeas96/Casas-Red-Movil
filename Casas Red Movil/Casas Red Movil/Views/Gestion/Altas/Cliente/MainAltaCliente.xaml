@@ -11,7 +11,7 @@
         ShowIndicators="true">
 
                 <cv:CarouselViewControl.ItemsSource>
-                    <x:Array Type="{x:Type View}">
+                    <x:Array Type="{x:Type DataTemplate}">
                         <local:DatosGenerales/>
                         <local:Direccion/>
                         <local:Contacto/>

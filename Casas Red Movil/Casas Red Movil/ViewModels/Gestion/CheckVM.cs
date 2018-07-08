@@ -7,6 +7,26 @@ namespace Casas_Red_Movil.ViewModels.Gestion
 {
     class CheckVM
     {
+        public List<CasaEnVenta> ListaCasas
+        {
+            get
+            {
+                return new List<CasaEnVenta>()
+                {
+                    new CasaEnVenta()
+                    {
+                        Domicilio ="Casa 1",
+                    },
+                    new CasaEnVenta()
+                    {
+                        Domicilio ="Casa 2",
+                    },new CasaEnVenta()
+                    {
+                        Domicilio ="Casa 3",
+                    }
+                };
+            }
+        }
         public List<Preguntas> Check
         {
             get

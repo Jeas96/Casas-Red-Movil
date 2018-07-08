@@ -9,12 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace Casas_Red_Movil.Views.Gestion.Altas.Cliente
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MainAltaCliente : ContentPage
-	{
-		public MainAltaCliente ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MainAltaCliente : ContentPage
+    {
+        public MainAltaCliente()
+        {
+            InitializeComponent();
+
+        }
+    }
 }

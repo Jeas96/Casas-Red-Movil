@@ -6,7 +6,11 @@ namespace Casas_Red_Movil
 {
     public partial class App : Application
     {
-        public static Administrativo usuarioActivo;
+        public static Administrativo usuarioActivo = new Administrativo()
+        {
+            Apellido = "Aplicacion",
+            Nombre = "Nombre de Usuario",
+        };
 
         public App()
         {

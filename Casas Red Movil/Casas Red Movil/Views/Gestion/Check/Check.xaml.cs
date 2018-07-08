@@ -13,5 +13,11 @@ namespace Casas_Red_Movil.Views.Gestion.Check
             BindingContext = new CheckVM();
 			InitializeComponent ();
 		}
+
+        private async void Save()
+        {
+            await DisplayAlert("Atencion","Datos Guardados con Exito","Ok");
+            await Navigation.PopAsync();
+        }
 	}
 }

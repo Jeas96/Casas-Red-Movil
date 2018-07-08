@@ -13,5 +13,11 @@ namespace Casas_Red_Movil.Views.Gestion.Altas.Cliente
             BindingContext = new ContactoVM();
 			InitializeComponent ();
 		}
-	}
+        private async void Next()
+        {
+            await DisplayAlert("Atencion", "Datos Guardados Correctamente", "Ok");
+            await Navigation.PushAsync(new Referencia());
+        }
+
+    }
 }

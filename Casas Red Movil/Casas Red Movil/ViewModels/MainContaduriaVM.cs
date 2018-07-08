@@ -14,6 +14,7 @@ namespace Casas_Red_Movil.ViewModels
                 {
                     new Area()
                     {
+                        Casa = "Cabo San Lucas 20302",
                         Area_= "Corretaje",
                         Porcentaje = "40%"
                     },new Area()
@@ -40,10 +41,19 @@ namespace Casas_Red_Movil.ViewModels
                 };
             }
         }
+
+        public string nombreUsuario
+        {
+            get
+            {
+                return App.usuarioActivo.Nombre;
+            }
+        }
     }
 
     internal class Area
     {
+        public string Casa { get; set; }
         public string Area_ { get; set; }
         public string Porcentaje { get; set; }
         public string Gastos { get; set; }

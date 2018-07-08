@@ -22,6 +22,6 @@ namespace Casas_Red_Movil.Views.Gestion
             await Navigation.PushAsync(new Check.Check());
         }
 
-        private async void AgregarCliente() { await Navigation.PushAsync(new MainAltaCliente()); }
+        private async void AgregarCliente() { await Navigation.PushAsync(new DatosGenerales()); }
     }
 }

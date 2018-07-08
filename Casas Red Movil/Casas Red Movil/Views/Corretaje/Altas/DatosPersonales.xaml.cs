@@ -16,6 +16,7 @@ namespace Casas_Red_Movil.Views.Corretaje.Altas
         private async void OnSave()
         {
             await DisplayAlert("Atencion", "Datos Guardados Correctamente", "Ok");
+            await Navigation.PushAsync(new DatosVivienda());
         }
     }
 }
