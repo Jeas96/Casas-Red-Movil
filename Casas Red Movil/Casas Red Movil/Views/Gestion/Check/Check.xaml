@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casas_Red_Movil.Views.Gestion.Check.Check">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker ItemsSource="{Binding ListaCasas}" ItemDisplayBinding="{Binding Domicilio}" />
+            <ListView ItemsSource="{Binding Check}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Text="{Binding Concepto}" />
+                                    <Switch Grid.Row="1" IsToggled="{Binding RespuestaB}" />
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Text="Gastos"/>
+            <Entry Placeholder="Gastos" Keyboard="Numeric" x:Name="Gastos" />
+            <Button Text="Guardar" Clicked="Save"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

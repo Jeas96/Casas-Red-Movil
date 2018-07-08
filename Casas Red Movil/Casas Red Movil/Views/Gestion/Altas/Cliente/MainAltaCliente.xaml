@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:local="clr-namespace:Casas_Red_Movil.Views.Gestion.Altas.Cliente"
+             x:Class="Casas_Red_Movil.Views.Gestion.Altas.Cliente.MainAltaCliente">
+    <ContentPage.Content>
+        <StackLayout>
+            <cv:CarouselViewControl x:Name="carousel"
+        ShowArrows="true"
+        ShowIndicators="true">
+
+                <cv:CarouselViewControl.ItemsSource>
+                    <x:Array Type="{x:Type DataTemplate}">
+                        <local:DatosGenerales/>
+                        <local:Direccion/>
+                        <local:Contacto/>
+                        <local:Referencia/>
+                        <local:Conyuge/>
+                    </x:Array>
+                </cv:CarouselViewControl.ItemsSource>
+
+            </cv:CarouselViewControl>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

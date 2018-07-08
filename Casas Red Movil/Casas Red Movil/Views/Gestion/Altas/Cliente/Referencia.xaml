@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casas_Red_Movil.Views.Gestion.Altas.Cliente.Referencia">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Referencia}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Text="{Binding Concepto}" />
+                                    <Entry Grid.Row="1" Text="{Binding Respuesta}" Keyboard="{Binding Keyboard}" />
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Siguiente" Clicked="Next" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

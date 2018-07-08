@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casas_Red_Movil.Views.Habilitacion.Alta.Habilitacion">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Habilitacion}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label VerticalOptions="Center"  Grid.Row="0" Text="{Binding Concepto}" />
+                                    <Switch VerticalOptions="Center"  Grid.Row="1" IsToggled="{Binding RespuestaB}" />
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Text="Calibre del cableado" />
+            <Entry Placeholder="Calibre"/>
+            <Button Text="Guardar" Clicked="OnSave"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
